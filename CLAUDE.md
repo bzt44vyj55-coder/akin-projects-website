@@ -20,7 +20,7 @@ Its sister business **Akin Building Co.** (residential building) has its own sep
 5. The footer must always show the ABN and the NSW contractor licence number.
 6. Never publish placeholder text (`04XX XXX XXX`, `yourdomain`, `[ABN]`, `[LICENCE NO.]`) as if it were real. Ask the owner for the real values.
 7. Don't add claims about past projects, clients or roles unless the owner has confirmed them. Projects from the director's previous roles (e.g. at Ventia, JLL) must be labelled as such.
-8. Voice: warm but straight, plain language, confident not boastful. On this site the wordmark is letter-spaced capitals "AKIN PROJECTS" (part of the chosen design); in running text write "Akin Projects". Brand accent is bronze `#b59a7a`; headline "Building expertise. Project confidence." (secondary strapline "Plan. Manage. Deliver.")
+8. Voice: warm but straight, plain language, confident not boastful. The logo (copper serif "akin" over a black circle, "PROJECTS" beneath) is `site/images/akin-projects-logo.png` (background removed, 520px wide), used small in the header (56px tall) and footer (84px). Original file is in `logo-source/` (not published). Don't enlarge it into the hero or distort it. In running text write "Akin Projects". Brand accent is bronze `#b59a7a`; headline "Building expertise. Project confidence." (secondary strapline "Plan. Manage. Deliver.")
 
 ## Domain
 - Live domain: https://akinprojects.com.au/ (email: hello@akinprojects.com.au). Canonical URL, og:url, JSON-LD and sitemap.xml all use this domain; update them together if it ever changes.

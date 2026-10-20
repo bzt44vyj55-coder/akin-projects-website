@@ -37,7 +37,7 @@
   --sans:"Helvetica Neue",Helvetica,Arial,sans-serif; --pad:7%;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:80px}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;scroll-padding-top:96px}
 body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
 img{display:block;max-width:100%}
 a{color:inherit}
@@ -57,10 +57,10 @@ section{padding:96px var(--pad)}
 :focus-visible{outline:3px solid var(--bronze);outline-offset:3px}
 
 /* Header */
-header.site{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px var(--pad);background:rgba(246,244,239,.97);border-bottom:1px solid transparent;transition:border-color .2s}
+header.site{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:12px var(--pad);background:rgba(246,244,239,.97);border-bottom:1px solid transparent;transition:border-color .2s}
 header.site.scrolled{border-color:var(--line)}
-.brand{text-decoration:none;font-weight:700;letter-spacing:.22em;font-size:15px;color:var(--ink)}
-.brand span{color:var(--bronze-dark)}
+.brand{display:block;text-decoration:none;line-height:0}
+.brand img{height:56px;width:auto}
 .nav{display:flex;align-items:center;gap:26px;list-style:none}
 .nav a{text-decoration:none;font-size:13px;letter-spacing:.04em}
 .nav a:hover{color:var(--bronze-dark)}
@@ -69,7 +69,7 @@ header.site.scrolled{border-color:var(--line)}
 .menu-btn{display:none;background:none;border:0;color:var(--ink);width:44px;height:44px;cursor:pointer;place-items:center;margin-right:-10px}
 @media (max-width:860px){
   .menu-btn{display:grid}
-  .nav{position:fixed;inset:68px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);padding:4px var(--pad) 24px;border-bottom:1px solid var(--line);transform:translateY(-130%);visibility:hidden;transition:transform .25s,visibility .25s}
+  .nav{position:fixed;inset:80px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);padding:4px var(--pad) 24px;border-bottom:1px solid var(--line);transform:translateY(-130%);visibility:hidden;transition:transform .25s,visibility .25s}
   .nav.open{transform:none;visibility:visible}
   .nav li a{display:block;padding:15px 0;border-bottom:1px solid var(--line);font-size:16px}
   .nav li:last-child a{margin-top:18px;text-align:center}
@@ -201,8 +201,10 @@ textarea{min-height:130px;resize:vertical}
 @media (max-width:560px){form.enq{grid-template-columns:1fr;padding:22px}}
 
 /* Footer */
-footer{background:var(--ink-deep);color:#9da29e;font-size:13px;padding:34px var(--pad);display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
-footer .brand{color:#fff;font-size:13px}
+footer{background:var(--ink-deep);color:#9da29e;font-size:13px;padding:40px var(--pad) 34px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 24px}
+footer .foot-logo{flex-basis:100%;margin-bottom:10px}
+footer .foot-logo img{height:84px;width:auto}
+footer .brand-txt{color:#fff;letter-spacing:.18em;font-weight:700}
 footer .tm{flex-basis:100%;font-size:11.5px;color:#7d827e}
 sup{font-size:.6em;line-height:0}
 
@@ -214,7 +216,7 @@ sup{font-size:.6em;line-height:0}
 <a class="skip" href="#main">Skip to content</a>
 
 <header class="site">
-  <a class="brand" href="#top" aria-label="Akin Projects home">AKIN <span>PROJECTS</span></a>
+  <a class="brand" href="#top" aria-label="Akin Projects home"><img src="images/akin-projects-logo.png" alt="Akin Projects" width="77" height="56"></a>
   <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
   </button>
@@ -385,7 +387,8 @@ sup{font-size:.6em;line-height:0}
 </main>
 
 <footer>
-  <span><span class="brand">AKIN PROJECTS</span> &nbsp;·&nbsp; © <span id="yr">2026</span> Akin Projects is a trading name of Guy Gleeson Building Pty Ltd · ABN [ABN]</span>
+  <a class="foot-logo" href="#top" aria-label="Back to top"><img src="images/akin-projects-logo.png" alt="Akin Projects" width="116" height="84" loading="lazy"></a>
+  <span><span class="brand-txt">AKIN PROJECTS</span> &nbsp;·&nbsp; © <span id="yr">2026</span> Akin Projects is a trading name of Guy Gleeson Building Pty Ltd · ABN [ABN]</span>
   <span>NSW Contractor Licence No. [LICENCE NO.]</span>
   <span class="tm">PRINCE2<sup>®</sup> is a registered trademark of the PeopleCert group.</span>
 </footer>
