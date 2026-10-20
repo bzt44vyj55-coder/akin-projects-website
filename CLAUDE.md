@@ -19,3 +19,6 @@ Its sister business **Akin Building Co.** (residential building) has its own sep
 6. Never publish placeholder text (`04XX XXX XXX`, `yourdomain`, `[ABN]`, `[LICENCE NO.]`) as if it were real. Ask the owner for the real values.
 7. Don't add claims about past projects, clients or roles unless the owner has confirmed them. Projects from the director's previous roles (e.g. at Ventia, JLL) must be labelled as such.
 8. Voice: warm but straight, plain language, confident not boastful. Always style the wordmark in lowercase: **akin**. Brand accent is bronze `#987c5b`; strapline "Plan. Manage. Deliver."
+
+## Domain
+- Live domain: https://akinprojects.com.au/ (email: hello@akinprojects.com.au). Canonical URL, og:url, JSON-LD and sitemap.xml all use this domain; update them together if it ever changes.
