@@ -29,3 +29,8 @@ Its sister business **Akin Building Co.** (residential building) has its own sep
 - Guy holds PRINCE2 Foundation (owner confirmed 2026-10-20). Describe it as "PRINCE2® Foundation" / "Foundation certified"; never "Practitioner".
 - The services section presents five delivery phases based on PRINCE2 processes (owner asked for the process names NOT to be shown on the cards): 01 Start up (Starting up a Project), 02 Initiate & plan (Initiating a Project), 03 Deliver & control (Controlling a Stage / Managing Product Delivery), 04 Commission & hand over (final delivery stage), 05 Close & review (Closing a Project). Directing a Project and Managing a Stage Boundary are shown as running throughout. Keep this mapping accurate if editing.
 - Always write PRINCE2 with the ® on first use in a section, and keep the footer line "PRINCE2® is a registered trademark of the PeopleCert group." Don't add "used under licence" (that wording is for accredited training organisations).
+
+## Netlify publish budget (important)
+- The Netlify team is on the FREE plan: 300 credits/month, and every production deploy (every push to `main`) costs 15 credits — about 20 publishes per month SHARED across both akin sites. Billing cycle starts on the 19th of each month.
+- Batch changes: edit and preview locally, then push to `main` once per working session. Never push after every small text edit.
+- If deploys show "Skipped due to account credit usage exceeded", don't keep pushing; commit locally and tell the owner (options: wait for the cycle reset, or the owner upgrades the plan).
