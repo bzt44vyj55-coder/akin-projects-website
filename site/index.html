@@ -162,9 +162,13 @@ header.site.scrolled{border-color:var(--line)}
 .project .tag{font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--bronze-dark)}
 .project h3{font-size:20px;margin:8px 0 6px}
 .project p{font-size:15px;color:var(--muted)}
-.proj-video{position:relative;height:230px;background:#12191b}
-@media (max-width:860px){.proj-video{height:auto;aspect-ratio:16/9}}
-.proj-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vbox{position:fixed;inset:0;z-index:100;display:none;place-items:center;padding:64px 16px 24px;background:rgba(18,25,27,.9)}
+.vbox.open{display:grid}
+.vbox .frame{position:relative;width:min(960px,100%);aspect-ratio:16/9;background:#000;box-shadow:0 20px 60px rgba(0,0,0,.5)}
+.vbox .frame.tall{width:min(560px,100%);aspect-ratio:auto;height:min(calc(min(560px,100vw - 32px) * .5625 + 215px),calc(100vh - 100px));background:#fff}
+.vbox iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.vbox .close{position:absolute;top:-48px;right:0;background:none;border:1px solid rgba(255,255,255,.5);color:#fff;font:inherit;font-size:14px;padding:7px 14px;cursor:pointer}
+.vbox .close:hover{background:#fff;color:var(--ink)}
 .project .proj-credit{font-size:12.5px;font-style:italic;margin-top:10px}
 .project .proj-link{display:inline-block;margin-top:12px;margin-right:18px;font-size:13.5px;font-weight:600;color:var(--bronze-dark);text-decoration:none;border-bottom:1px solid currentColor}
 .project .proj-link:hover{color:var(--ink)}
@@ -342,9 +346,9 @@ sup{font-size:.6em;line-height:0}
     <h2>Projects that inform our approach.</h2>
     <p class="lead">Project leadership gained in previous roles with organisations including Ventia and JLL, now offered directly to Illawarra property owners.</p>
     <div class="projects">
-      <article class="project"><img src="images/maritime-museum-boardwalk.jpg" alt="New timber boardwalk, feature stairs and foreshore at the Australian National Maritime Museum, Sydney" loading="lazy" width="1000" height="1500" style="object-position:center 78%"><div><span class="tag">Public</span><h3>Australian National Maritime Museum</h3><p>Boardwalk replacement and foreshore upgrade on Sydney Harbour. Project lead through design and contractor procurement to delivery: a new timber boardwalk and suspended concrete deck, feature stairs, seating, planter boxes and accessible ramps.</p><p class="proj-credit">Project lead in a previous role with Ventia. Design by Cox Architecture. Video by Regal Innovations, principal contractor.</p><a class="proj-link" href="https://www.instagram.com/reel/DHuni85s0LD/embed/" target="_blank" rel="noopener">▶ Watch the project video ↗</a></div></article>
+      <article class="project"><img src="images/maritime-museum-boardwalk.jpg" alt="New timber boardwalk, feature stairs and foreshore at the Australian National Maritime Museum, Sydney" loading="lazy" width="1000" height="1500" style="object-position:center 78%"><div><span class="tag">Public</span><h3>Australian National Maritime Museum</h3><p>Boardwalk replacement and foreshore upgrade on Sydney Harbour. Project lead through design and contractor procurement to delivery: a new timber boardwalk and suspended concrete deck, feature stairs, seating, planter boxes and accessible ramps.</p><p class="proj-credit">Project lead in a previous role with Ventia. Design by Cox Architecture. Video by Regal Innovations, principal contractor.</p><a class="proj-link" href="https://www.instagram.com/reel/DHuni85s0LD/embed/" target="_blank" rel="noopener" data-video="https://www.instagram.com/reel/DHuni85s0LD/embed/" data-shape="tall" data-title="Australian National Maritime Museum boardwalk (video: Regal Innovations)">▶ Watch the project video</a></div></article>
       <article class="project"><img src="images/dva-open-arms-reception.jpg" alt="Curved timber reception at the DVA Open Arms fit-out, Melbourne" loading="lazy" width="1000" height="791"><div><span class="tag">Federal</span><h3>DVA Open Arms, Melbourne</h3><p>Part of a national office rollout for Open Arms – Veterans &amp; Families Counselling (Department of Veterans' Affairs). Project lead on the Melbourne fit-out: a welcoming reception, counselling rooms and staff areas designed around calm, private client care.</p><p class="proj-credit">Project lead in a previous role with JLL (Jones Lang LaSalle). Principal contractor Hunter Mason; architect CK Architecture.</p></div></article>
-      <article class="project"><img src="images/law-courts-parramatta-roof.jpg" alt="Aerial view of the Commonwealth Law Courts, Parramatta, with new roof and rooftop solar" loading="lazy" width="1200" height="670"><div><span class="tag">Federal</span><h3>Commonwealth Law Courts, Parramatta</h3><p>Full electrical upgrade for the Department of Finance: replacement of the main and sub-distribution boards, a new roof and 227 rooftop solar panels. Project lead from energy audit through design, scheduling and installation, staged so the building stayed operational. The solar alone saves around 90 tonnes of emissions and $13,000 in electricity each year.</p><p class="proj-credit">Project lead in a previous role with Ventia. Photo and video by Hunter Mason, principal contractor, used with permission.</p><a class="proj-link" href="https://player.vimeo.com/video/854827221?h=e4b8385b8c" target="_blank" rel="noopener">▶ Watch the project video ↗</a><a class="proj-link" href="https://www.ventia.com/what-we-do/projects/solar-upgrade-completed-at-well-known-parramatta-building" target="_blank" rel="noopener">Read the project story on ventia.com ↗</a></div></article>
+      <article class="project"><img src="images/law-courts-parramatta-roof.jpg" alt="Aerial view of the Commonwealth Law Courts, Parramatta, with new roof and rooftop solar" loading="lazy" width="1200" height="670"><div><span class="tag">Federal</span><h3>Commonwealth Law Courts, Parramatta</h3><p>Full electrical upgrade for the Department of Finance: replacement of the main and sub-distribution boards, a new roof and 227 rooftop solar panels. Project lead from energy audit through design, scheduling and installation, staged so the building stayed operational. The solar alone saves around 90 tonnes of emissions and $13,000 in electricity each year.</p><p class="proj-credit">Project lead in a previous role with Ventia. Photo and video by Hunter Mason, principal contractor, used with permission.</p><a class="proj-link" href="https://player.vimeo.com/video/854827221?h=e4b8385b8c" target="_blank" rel="noopener" data-video="https://player.vimeo.com/video/854827221?h=e4b8385b8c&amp;autoplay=1&amp;dnt=1" data-title="Commonwealth Law Courts Parramatta (video: Hunter Mason)">▶ Watch the project video</a><a class="proj-link" href="https://www.ventia.com/what-we-do/projects/solar-upgrade-completed-at-well-known-parramatta-building" target="_blank" rel="noopener">Read the project story on ventia.com ↗</a></div></article>
     </div>
     <p class="note">Experience gained in the director's previous roles, not projects contracted by Akin Projects. Images are illustrative and do not depict these projects.</p>
   </section>
@@ -420,6 +424,33 @@ var CONTACT = { phoneDisplay: "0437 697 175", phoneDial: "+61437697175", email: 
   btn.addEventListener('click', function(){ setMenu(!nav.classList.contains('open')); });
   nav.addEventListener('click', function(e){ if (e.target.closest('a')) setMenu(false); });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') setMenu(false); });
+
+  // Project videos open in a pop-up player over the page (the link still works on its own if scripts are off)
+  var vbox = document.createElement('div');
+  vbox.className = 'vbox'; vbox.setAttribute('role', 'dialog'); vbox.setAttribute('aria-modal', 'true'); vbox.setAttribute('aria-label', 'Project video');
+  vbox.innerHTML = '<div class="frame"><button class="close" type="button">Close ✕</button></div>';
+  document.body.appendChild(vbox);
+  var vframe = vbox.querySelector('.frame'), vclose = vbox.querySelector('.close'), lastLink = null;
+  function closeVideo(){
+    if (!vbox.classList.contains('open')) return;
+    vbox.classList.remove('open'); document.body.style.overflow = '';
+    var f = vframe.querySelector('iframe'); if (f) f.remove();
+    if (lastLink) lastLink.focus();
+  }
+  document.querySelectorAll('a[data-video]').forEach(function(a){
+    a.addEventListener('click', function(e){
+      e.preventDefault(); lastLink = a;
+      vframe.classList.toggle('tall', a.getAttribute('data-shape') === 'tall');
+      var f = document.createElement('iframe');
+      f.src = a.getAttribute('data-video'); f.title = a.getAttribute('data-title') || 'Project video';
+      f.allow = 'autoplay; fullscreen; picture-in-picture'; f.allowFullscreen = true;
+      vframe.appendChild(f);
+      vbox.classList.add('open'); document.body.style.overflow = 'hidden'; vclose.focus();
+    });
+  });
+  vclose.addEventListener('click', closeVideo);
+  vbox.addEventListener('click', function(e){ if (e.target === vbox) closeVideo(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeVideo(); });
 
   // Enquiry form: Netlify Forms when hosted there, email fallback otherwise
   document.querySelectorAll('form.enq').forEach(function(form){
