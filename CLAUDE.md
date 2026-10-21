@@ -31,6 +31,6 @@ Its sister business **Akin Building Co.** (residential building) has its own sep
 - Always write PRINCE2 with the ® on first use in a section, and keep the footer line "PRINCE2® is a registered trademark of the PeopleCert group." Don't add "used under licence" (that wording is for accredited training organisations).
 
 ## Netlify publish budget (important)
-- The Netlify team is on the FREE plan: 300 credits/month, and every production deploy (every push to `main`) costs 15 credits — about 20 publishes per month SHARED across both akin sites. Billing cycle starts on the 19th of each month.
+- The Netlify team is on the PERSONAL plan (US$9/month, upgraded 2026-10-21): 1,000 credits/month; every production deploy (every push to `main`) costs 15 credits — about 65 publishes per month SHARED across both akin sites. Check remaining credits on the team Billing page before publishing and warn the owner if under ~150.
 - Batch changes: edit and preview locally, then push to `main` once per working session. Never push after every small text edit.
 - If deploys show "Skipped due to account credit usage exceeded", don't keep pushing; commit locally and tell the owner (options: wait for the cycle reset, or the owner upgrades the plan).
