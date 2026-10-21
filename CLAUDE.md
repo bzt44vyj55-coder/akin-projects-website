@@ -32,5 +32,5 @@ Its sister business **Akin Building Co.** (residential building) has its own sep
 
 ## Netlify publish budget (important)
 - The Netlify team is on the PERSONAL plan (US$9/month, upgraded 2026-10-21): 1,000 credits/month; every production deploy (every push to `main`) costs 15 credits — about 65 publishes per month SHARED across both akin sites. Check remaining credits on the team Billing page before publishing and warn the owner if under ~150.
-- Batch changes: edit and preview locally, then push to `main` once per working session. Never push after every small text edit.
+- OWNER RULE (2026-10-21): NEVER push to `main` (= publish) unless the owner explicitly says "publish" in that session. Make all edits locally, commit locally, and show them in the local preview (see `.claude/launch.json` in the parent folder: akin-projects-site on :8766, akin-building-site on :8767). Batch everything into one publish per site.
 - If deploys show "Skipped due to account credit usage exceeded", don't keep pushing; commit locally and tell the owner (options: wait for the cycle reset, or the owner upgrades the plan).
